@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TopBar & BottomBar</title>
+  <style>
+    html, body, div {
+
+      /* Utile pour ton problème */
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+
+      /* Inutile pour ton problème */
+      overflow-x: hidden;
+      color: white;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    body {
+      margin: 100px 0;
+      height: 400vh;
+    }
+    div {
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .topbar {
+      width: 100%;
+      height: 100px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: teal;
+    }
+    .main-container {
+      width: 80vw;
+      height: 100%;
+      margin: 0 auto;
+      background-color: violet;
+    }
+    .bottom-bar {
+      width: 100%;
+      height: 100px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    TopBar
+  </div>
+  <div class="main-container">
+    Main Container
+  </div>
+  <div class="bottom-bar">
+    BottomBar
+  </div>
+</body>
+</html>
